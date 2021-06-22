@@ -5,7 +5,6 @@ set -o pipefail
 
 go_to_build_dir() {
     if [ ! -z $INPUT_SUBDIR ]; then
-        echo $INPUT_SUBDIR
         cd $INPUT_SUBDIR
     fi
 }
@@ -19,7 +18,7 @@ check_if_meta_yaml_file_exists() {
 
 build_package(){
     # Build for Linux
-    conda build --output-folder . .
+    conda build -c conda-forge --output-folder . .
 
     # Convert to other platforms
     if [[ $INPUT_PLATFORMS == *"all"* || $INPUT_PLATFORMS == *"osx-64"* ]]; then
