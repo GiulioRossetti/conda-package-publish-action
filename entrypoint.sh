@@ -5,6 +5,7 @@ set -o pipefail
 
 go_to_build_dir() {
     if [ ! -z $INPUT_SUBDIR ]; then
+        echo $INPUT_SUBDIR
         cd $INPUT_SUBDIR
     fi
 }
