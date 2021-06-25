@@ -18,7 +18,7 @@ check_if_meta_yaml_file_exists() {
 
 build_package(){
     # Build for Linux
-    conda build -c conda-forge --output-folder . .
+    conda build -c conda-forge -c giuliorossetti --output-folder . .
 
     # Convert to other platforms
     if [[ $INPUT_PLATFORMS == *"all"* || $INPUT_PLATFORMS == *"osx-64"* ]]; then
