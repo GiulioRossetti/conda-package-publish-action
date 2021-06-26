@@ -1,6 +1,6 @@
-name: 'Build and publish Conda packages to Anaconda.org'
+name: 'Build and publish Conda packages to Anaconda.org (w dependencies on giuliorossetti)'
 description: 'Build and Publish conda package to Anaconda'
-author: 'Andrew Prokhorenkov, modified by Julian Psotta'
+author: 'Andrew Prokhorenkov, modified by Julian Psotta and Giulio Rossetti'
 branding:
   icon: 'package'  
   color: 'purple'
